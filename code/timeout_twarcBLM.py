@@ -3,7 +3,7 @@ import time
 import os
 import subprocess
 
-for i in range(24*7):
+while True:
     src_dir = '../data/BLM/'
     now = datetime.datetime.now()
     timestr = now.strftime("%Y-%m-%d_%H%M")
