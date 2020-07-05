@@ -42,8 +42,8 @@ def get_tweets(query, lang, user):
 
     global time2rest
 
-    if time2rest > 300:
-        time.sleep(600)
+    if time2rest > 200:
+        time.sleep(960)
         time2rest = 0
     else:
         time2rest += 1
@@ -63,7 +63,7 @@ def main():
 
     file_usernames.close()
 
-    query="흑인 OR 백인 OR 조지-플로이드 OR 인종-차별 OR 브리오나-테일러 OR 미국-경찰 OR 미국-시위 OR 미국-폭동 OR black OR white OR george-floyd OR racist OR racism OR breonna-taylor OR cops OR police OR riot OR protest OR loot OR rally"
+    query="흑인 OR 백인 OR 조지-플로이드 OR 인종-차별 OR 브리오나-테일러 OR 미국-경찰 OR 美-경찰 OR 美-시위 OR 미국-시위 OR 미국-폭동 OR 美-폭동 OR black OR white OR george-floyd OR racist OR racism OR breonna-taylor OR cops OR police OR riot OR protest OR loot OR rally"
     lang="ko" #only line that's diff
 
     for user in list_of_usernames:
