@@ -27,7 +27,7 @@ def get_tweets(query, start, end, filename):
 
 
     # save to file
-    src_dir = f'./{filename}'
+    src_dir = f'../{filename}/'
     filename = f'{src_dir}/{filename}_{start}_to_{end}.csv'
 
     with open(filename, "w+", newline="") as output:
