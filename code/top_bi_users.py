@@ -29,7 +29,7 @@ def get_tweets(lang, user):
                         tw.mentions] for tw in tweets]
 
             # save to file
-            src_dir = f'../ko_byuser/'
+            src_dir = f'../en_byuser/'
             filename = f'{src_dir}/{lang}_{user}.csv'
 
             with open(filename, "w+", newline="") as output:
@@ -56,7 +56,7 @@ def main():
 
     file_usernames.close()
 
-    lang="ko" 
+    lang="en" 
 
     for user in list_of_usernames:
         get_tweets(lang, user)
